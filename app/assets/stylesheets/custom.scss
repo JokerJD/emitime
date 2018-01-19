@@ -1,0 +1,20 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/**
+ * Custom Style
+ */
+
+//fonts main, header, style, Poppins, Lato, Raleway, Muli, Dosis, Libre Barcode 39
+
+$rgba-primary-0: rgba(255,116,  0,1);	// Main Primary color */
+$rgba-primary-1: rgba(255,195,146,1);
+$rgba-primary-2: rgba(255,163, 87,1);
+$rgba-primary-3: rgba(208, 94,  0,1);
+$rgba-primary-4: rgba(151, 68,  0,1);
+
+$rgba-complement-0: rgba(  0,171,171,1);	// Main Complement color */
+$rgba-complement-1: rgba(132,231,231,1);
+$rgba-complement-2: rgba( 62,182,182,1);
+$rgba-complement-3: rgba(  0,125,125,1);
+$rgba-complement-4: rgba(  0, 91, 91,1);
