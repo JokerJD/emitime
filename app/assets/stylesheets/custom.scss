@@ -1,4 +1,3 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 /**
@@ -18,3 +17,56 @@ $rgba-complement-1: rgba(132,231,231,1);
 $rgba-complement-2: rgba( 62,182,182,1);
 $rgba-complement-3: rgba(  0,125,125,1);
 $rgba-complement-4: rgba(  0, 91, 91,1);
+
+html, body, * {
+	font-size: 100%;
+}
+
+a:hover, button:hover, link:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.thin-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.thini-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.light-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.lighti-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.regular-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.regulari-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bold-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.boldi-poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
