@@ -1,2 +1,17 @@
-<h1>Bios#index</h1>
-<p>Find me in app/views/bios/index.html.erb</p>
+<div class="container">
+  <h1 class="bold-poppins">GROUPRAISE<%= @bio.title %></h1>
+  <% if current_user.id == @bio.user_id %>
+    <%= link_to "Edit", edit_bio_path(@bio), class: "align-self-end"%>
+  <% end %>
+  <div class="row">
+    <div class="col-lg-4">
+      <%= image_tag("sample.jpg", class: "img-thumbnail") %>
+    </div>
+    <div class="col-lg-8">
+      <h3 class="regulari-poppins">"I hate Hatchbuck"<%= @bio.lastwords %></h3>
+    </div>
+
+    </div>
+  </div>
+
+</div>

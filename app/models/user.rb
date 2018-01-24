@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, omniauth_providers: [:facebook]
   has_one :bio
+  before_create :build_default_bio
 
   def self.from_omniauth(auth)
   	where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -24,4 +25,11 @@ class User < ApplicationRecord
   def has_facebook_linked?
 	   self.provider.present? && self.uid.present?
   end
+
+  private
+
+    def build_default_bio
+      build_bio
+      true
+    end
 end

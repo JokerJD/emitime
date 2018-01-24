@@ -1,7 +1,16 @@
 /**
  * Custom Style
  */
-
+ // @include media-breakpoint-up(xs) {
+ //  }
+ // @include media-breakpoint-up(sm) {
+ //  }
+ // @include media-breakpoint-up(md) {
+ //  }
+ // @include media-breakpoint-up(lg) {
+ //  }
+ // @include media-breakpoint-up(xl) {
+ //  }
 
 $primary: $color-primary-0;
 $secondary: $color-complement-4;
@@ -88,4 +97,9 @@ a:hover, button:hover, link:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+
+a:hover, button:hover, link:hover {
+	cursor: pointer;
+	opacity: 0.6;
 }
