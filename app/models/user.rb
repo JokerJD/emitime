@@ -26,10 +26,13 @@ class User < ApplicationRecord
 	   self.provider.present? && self.uid.present?
   end
 
+  def bio
+      super || build_bio
+  end
+
   private
 
     def build_default_bio
-      build_bio
-      true
+      bio || true
     end
 end
