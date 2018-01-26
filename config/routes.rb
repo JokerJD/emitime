@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'bios/index'
   resources :bios, only: [:edit, :update]
   resources :authentications, only: [:destroy]
+  get 'bios/index'
+
+  get '/home', to: 'home#index'
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 

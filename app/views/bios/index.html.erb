@@ -1,17 +1,27 @@
 <div class="container">
-  <h1 class="bold-poppins">GROUPRAISE<%= @bio.title %></h1>
-  <% if current_user.id == @bio.user_id %>
-    <%= link_to "Edit", edit_bio_path(@bio), class: "align-self-end"%>
-  <% end %>
+  <h1 class="bold-poppins text-center py-3"><%= best_in_place @bio, :title %></h1>
+
   <div class="row">
     <div class="col-lg-4">
+      <h3 class="bold-poppins text-center"><%= best_in_place @bio, :name %></h3>
       <%= image_tag("sample.jpg", class: "img-thumbnail") %>
     </div>
-    <div class="col-lg-8">
-      <h3 class="regulari-poppins">"I hate Hatchbuck"<%= @bio.lastwords %></h3>
+    <div class="col-lg-4">
+      <h2 class="regulari-poppins"><%= best_in_place @bio, :lastwords %></h2>
     </div>
-
+    <div class="col-lg-4">
+      <h3 class="regulari-poppins"><%= best_in_place @bio, :lastwords %></h3>
     </div>
   </div>
+</div>
 
+<div class="container">
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-primary">Header</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Success card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary">Footer</div>
+  </div>
 </div>

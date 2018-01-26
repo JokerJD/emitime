@@ -38,6 +38,8 @@ gem 'omniauth-facebook'
 gem 'figaro'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'best_in_place'
+gem 'font-awesome-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
