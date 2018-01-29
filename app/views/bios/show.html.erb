@@ -1,16 +1,16 @@
 <div class="container">
-  <h1 class="bold-poppins text-center py-3"><%= best_in_place @bio, :title %></h1>
+  <h1 class="bold-poppins text-center py-3"><%= @bio.title %></h1>
 
   <div class="row">
     <div class="col-lg-4">
-      <h3 class="bold-poppins text-center"><%= best_in_place @bio, :name %></h3>
+      <h3 class="bold-poppins text-center"><%= @bio.name %></h3>
       <%= image_tag("sample.jpg", class: "img-thumbnail") %>
     </div>
     <div class="col-lg-4">
-      <h2 class="regulari-poppins"><%= best_in_place @bio, :lastwords %></h2>
+      <h2 class="regulari-poppins"><%= @bio.lastwords %></h2>
     </div>
     <div class="col-lg-4">
-      <h3>index</h3>
+      <h3 class="regulari-poppins">show</h3>
     </div>
   </div>
 </div>
