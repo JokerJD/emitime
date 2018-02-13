@@ -1,4 +1,5 @@
 <header>
+  <!-- Sticky top not working with <header> -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
     <a class="navbar-brand" href="/">
       <img src="" width="40" height="40" class="d-inline-block align-top" alt="">
@@ -10,6 +11,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <% if user_signed_in? %>
+          <li class="nav-item small"><%= link_to "First login", edit_bio_path(current_user.bio), class: "nav-link" %></li>
           <li class="nav-item small"><%= link_to "Your Bio", bios_path, method: :get, class: "nav-link" %></li>
           <li class="nav-item small"><%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link" %></li>
           <li class="nav-item small"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link"  %></li>

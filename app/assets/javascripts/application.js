@@ -20,4 +20,12 @@
 
 $(document).ready(function() {
   jQuery(".best_in_place").best_in_place();
+
 });
+$.datepicker.setDefaults({
+  showOn: "both",
+  buttonImageOnly: true,
+  // buttonImage: "",
+  buttonText: "Calendar"
+});
+$.datepicker.formatDate( "yy-mm-dd", new Date( 2007, 1 - 1, 26 ) );

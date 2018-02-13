@@ -1,0 +1,22 @@
+<div class="container">
+  <%= form_for @bio, url: {action: "update"}, html: {class: "interactive-form"} do |f| %>
+  <%= f.text_field :title, class: "interactive-input", id: "input-1" %>
+  <label for="input-1">
+    <span class="label-text">Full Name</span>
+    <span class="nav-dot"></span>
+    <div class="signup-button-trigger">Sign Up</div>
+  </label>
+  <%= f.text_field :name, class: "interactive-input", id: "input-2" %>
+  <label for="input-2">
+    <span class="label-text">Username</span>
+    <span class="nav-dot"></span>
+  </label>
+  <%= f.submit "go", class: "interactive-button", id: "input-3" %>
+  <label for="input-3">
+    <span class="label-text">Username</span>
+    <span class="nav-dot"></span>
+  </label>
+  <p class="tip">Press Tab</p>
+  <div class="signup-button">Sign Up</div>
+  <% end %>
+</div>

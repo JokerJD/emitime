@@ -9,6 +9,7 @@ class BiosController < ApplicationController
 
   def edit
     @bio = current_user.bio
+    render layout: "first-login"
   end
 
   def update

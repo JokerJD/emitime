@@ -4,7 +4,9 @@
   <div class="row">
     <div class="col-lg-4">
       <h3 class="bold-poppins text-center"><%= @bio.name %></h3>
-      <%= image_tag("sample.jpg", class: "img-thumbnail") %>
+      <div class="emi-photo">
+        <%= image_tag("sample.jpg", class: "img-fluid") %>
+      </div>
     </div>
     <div class="col-lg-4">
       <h2 class="regulari-poppins"><%= @bio.lastwords %></h2>

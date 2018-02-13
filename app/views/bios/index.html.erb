@@ -1,21 +1,53 @@
 <div class="container">
-  <h1 class="bold-poppins text-center py-3"><%= best_in_place @bio, :title %></h1>
-
+  <div class="">
+    <h1 class="bold-poppins py-1"><%= best_in_place @bio, :title %></h1>
+  </div>
   <div class="row">
-    <div class="col-lg-4">
-      <h3 class="bold-poppins text-center"><%= best_in_place @bio, :name %></h3>
-      <%= image_tag("sample.jpg", class: "img-thumbnail") %>
+    <div class="col-lg-4 col-sm-12 border">
+        <%= image_tag("sample.jpg", class: "img-fluid") %>
+      <div class="d-flex">
+        <h3 class="bold-poppins"><%= best_in_place @bio, :name %></h3>
+      </div>
     </div>
-    <div class="col-lg-4">
-      <h2 class="regulari-poppins"><%= best_in_place @bio, :lastwords %></h2>
-    </div>
-    <div class="col-lg-4">
-      <h3>index</h3>
+    <div class="col-lg-8 border">
+      <div class="row">
+        <div class="col-sm-12 box-square border">
+          <p class="h3 regular-poppins text-center"><%= icon('fas', 'pencil-alt') %> <%= best_in_place @bio, :lastwords %></p>
+        </div>
+        <div class="col-sm-12 box-square border">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 border">
+              <p class="light-poppins"><%= icon('fas', 'pencil-alt') %> Name: <%= best_in_place @bio, :name %></p>
+              <p class="light-poppins"><%= icon('fas', 'birthday-cake') %> Birthday: <%= best_in_place @bio, :birthday, :as => :date %></p>
+              <p class="light-poppins"><%= icon('fas', 'leaf') %> Place born: <%= best_in_place @bio, :place_born %></p>
+            </div>
+            <div class="col-lg-6 col-sm-12 border">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<div class="container">
+<hr>
+<div class="container-fluid">
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-primary">Header</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Success card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary">Footer</div>
+  </div>
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-primary">Header</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Success card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary">Footer</div>
+  </div>
   <div class="card border-primary mb-3" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-primary">Header</div>
     <div class="card-body text-primary">

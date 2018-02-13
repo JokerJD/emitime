@@ -1,16 +1,16 @@
 /**
- * Custom Style
- */
- // @include media-breakpoint-up(xs) {
- //  }
- // @include media-breakpoint-up(sm) {
- //  }
- // @include media-breakpoint-up(md) {
- //  }
- // @include media-breakpoint-up(lg) {
- //  }
- // @include media-breakpoint-up(xl) {
- //  }
+* Custom Style
+*/
+// @include media-breakpoint-up(xs) {
+//  }
+// @include media-breakpoint-up(sm) {
+//  }
+// @include media-breakpoint-up(md) {
+//  }
+// @include media-breakpoint-up(lg) {
+//  }
+// @include media-breakpoint-up(xl) {
+//  }
 
 $primary: $color-primary-0;
 $secondary: $color-complement-4;
@@ -56,47 +56,47 @@ a:hover, button:hover, link:hover {
 }
 
 .thin-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 100;
 }
 
 .thini-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  font-style: italic;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 100;
+	font-style: italic;
 }
 
 .light-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 }
 
 .lighti-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .regular-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 }
 
 .regulari-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-style: italic;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 
 .bold-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
 }
 
 .boldi-poppins {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-style: italic;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: italic;
 }
 
 a:hover, button:hover, link:hover {
@@ -105,5 +105,22 @@ a:hover, button:hover, link:hover {
 }
 
 .navbar {
-	height: 80px;
+	height: 50px;
+	// height: 10vh;
+}
+
+.screen-height {
+	height: 90%;
+	height: 90vh;
+}
+
+.box-square {
+	// width: 100%;
+	// padding-top: 90%;
+	// position: relative;
+	height: 40vh;
+}
+
+input {
+	width: 100%;
 }

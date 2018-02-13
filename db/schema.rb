@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180126195322) do
+ActiveRecord::Schema.define(version: 20180212170051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,24 @@ ActiveRecord::Schema.define(version: 20180126195322) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.string "goals"
+    t.string "dreams"
+    t.string "values"
+    t.string "place_born"
+    t.string "places_lived"
+    t.string "places_visited"
+    t.string "interests"
+    t.string "education"
+    t.string "work"
+    t.string "relationship_status"
+    t.string "favorite_color"
+    t.string "favorite_sport"
+    t.string "favorite_show"
+    t.string "favorite_music"
+    t.string "favorite_movie"
+    t.string "favorite_quote"
+    t.string "languages"
+    t.integer "gender"
     t.index ["user_id"], name: "index_bios_on_user_id"
   end
 
