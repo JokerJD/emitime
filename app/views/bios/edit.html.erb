@@ -1,22 +1,38 @@
 <div class="container">
   <%= form_for @bio, url: {action: "update"}, html: {class: "interactive-form"} do |f| %>
-  <%= f.text_field :title, class: "interactive-input", id: "input-1" %>
+  <%= f.text_field :name, :required => true, class: "interactive-input", id: "input-1"  %>
   <label for="input-1">
-    <span class="label-text">Full Name</span>
+    <span class="label-text">First Name</span>
     <span class="nav-dot"></span>
-    <div class="signup-button-trigger">Sign Up</div>
+    <div class="signup-button-trigger">Create your bio</div>
   </label>
-  <%= f.text_field :name, class: "interactive-input", id: "input-2" %>
+  <%= f.text_field :last_name, :required => true,  class: "interactive-input", id: "input-2" %>
   <label for="input-2">
-    <span class="label-text">Username</span>
+    <span class="label-text">Last Name</span>
     <span class="nav-dot"></span>
   </label>
-  <%= f.submit "go", class: "interactive-button", id: "input-3" %>
+  <%= f.text_field :place_born, :required => true,  class: "interactive-input", id: "input-3" %>
   <label for="input-3">
-    <span class="label-text">Username</span>
+    <span class="label-text">Place I was born</span>
     <span class="nav-dot"></span>
   </label>
+  <%= f.text_field :place_current, :required => true,  class: "interactive-input", id: "input-4" %>
+  <label for="input-4">
+    <span class="label-text">Where I live now</span>
+    <span class="nav-dot"></span>
+  </label>
+  <%= f.text_field :values, :required => true,  class: "interactive-input", id: "input-5" %>
+  <label for="input-5">
+    <span class="label-text">My 3 most important values</span>
+    <span class="nav-dot"></span>
+  </label>
+  <%= f.text_field :lastwords, :required => true,  class: "interactive-input", id: "input-6" %>
+  <label for="input-6">
+    <span class="label-text">My last words to humanity</span>
+    <span class="nav-dot"></span>
+  </label>
+  <%= f.submit "go", class: "interactive-button" %>
   <p class="tip">Press Tab</p>
-  <div class="signup-button">Sign Up</div>
+  <div class="signup-button">Create your bio</div>
   <% end %>
 </div>

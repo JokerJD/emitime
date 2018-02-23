@@ -17,7 +17,7 @@
         <div class="col-sm-12 box-square border">
           <div class="row">
             <div class="col-lg-6 col-sm-12 border">
-              <p class="light-poppins"><%= icon('fas', 'pencil-alt') %> Name: <%= best_in_place @bio, :name %></p>
+              <span class="light-poppins regular"><%= icon('fas', 'pencil-alt') %> Name: </span><span class="light-poppins regular"><%= best_in_place @bio, :name %></span>
               <p class="light-poppins"><%= icon('fas', 'birthday-cake') %> Birthday: <%= best_in_place @bio, :birthday, :as => :date %></p>
               <p class="light-poppins"><%= icon('fas', 'leaf') %> Place born: <%= best_in_place @bio, :place_born %></p>
             </div>

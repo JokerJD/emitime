@@ -107,6 +107,10 @@ a:hover, button:hover, link:hover {
 .navbar {
 	height: 50px;
 	// height: 10vh;
+	.nav-logo {
+		height: 40px;
+		width: 40px;
+	}
 }
 
 .screen-height {
@@ -118,9 +122,9 @@ a:hover, button:hover, link:hover {
 	// width: 100%;
 	// padding-top: 90%;
 	// position: relative;
-	height: 40vh;
+	height: 20vh;
 }
 
 input {
-	width: 100%;
+	max-width: 100%;
 }

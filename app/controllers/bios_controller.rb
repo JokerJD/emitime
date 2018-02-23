@@ -29,6 +29,6 @@ class BiosController < ApplicationController
   private
 
     def bio_params
-      params.require(:bio).permit(:title, :lastwords, :name)
+      params.require(:bio).permit(:title, :lastwords, :name, :last_name, :place_born, :place_current, :values)
     end
 end
